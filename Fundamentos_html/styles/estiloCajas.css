@@ -1,0 +1,14 @@
+#s1 div{
+    background-color: rgb(230, 77, 77);
+    width: 400px;
+    display: inline-block;
+}
+
+#s2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* table, tr, td, th{
+    margin: 0;
+} */
