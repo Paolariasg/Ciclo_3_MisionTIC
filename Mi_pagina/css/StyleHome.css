@@ -1,3 +1,5 @@
+/************ESTILOS PARA EL MENU_1*************/
+
 ul{
     list-style-type: none;
     margin: 0px;
@@ -24,4 +26,57 @@ li a:hover{
 
 body{
     margin: 0px;
+}
+
+#contenedor{
+    background-color: rgb(60, 243, 173);
+    width: 40%;
+}
+
+
+/********ESTILO DEL MENÚ**********/
+.fa-bars, .fa-times, input[type="checkbox"]{
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 1.8rem;
+    opacity: 0;
+}
+
+input[type="checkbox"]{
+    margin: 0px;
+    padding: 0px;
+}
+
+/************ESTILOS PARA EL MENU_2*************/
+#menu_2{
+    width: 120px;
+    position: absolute;
+    right: 0px;
+    display: none ;
+}
+
+/************MEDIA QUERIES*************/
+@media only screen and (max-width: 800px) {
+    .fa-bars{
+        opacity: 1;
+    }
+    input:checked~#menu_2{
+        display: block;
+    }
+    input:checked~.fa-times{
+        opacity: 1;
+    }
+    input:not(:checked)~.fa-bars{
+        display: none;
+    } 
+    #menu_1 ul li{
+        opacity: 0;
+    }
+    #contenedor{
+        width: 100%;
+    }
 }
