@@ -20,10 +20,16 @@
         crossorigin="anonymous"></script>
 
     <!--------- Llamar al archivo 'functions.js' --------->
-    <script src="functions.js"></script>
-    <!-- <script>
-        alert ("Hola mundo escrito desde index.html")
-    </script> -->
+    <!-- <script src="functions.js"></script> -->
+
+    <!--------- Llamar al archivo 'characters.js' --------->
+    <script src="characters.js"></script>
+    <script>
+        getCharacters();
+    </script>
+
+    <!--------- Llamar la hoja de estilos --------->
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 
@@ -42,26 +48,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#" onclick="saludar()">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -72,14 +58,30 @@
     </nav>
     <!--------- FIN DE LA BARRA DE NAVEGACIÓN --------->
 
-    <!--------- Tarjeta --------->
-    <div class="card" style="width: 18rem;">
-        <img id="img1" src="https://image.goat.com/750/attachments/product_template_pictures/images/060/172/882/original/CZ4149_400.png.png" class="card-img-top" alt="img1">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="btn btn-primary" onclick="cambiarImagen()">Actualizar</a>
+    <!--------- Cabecera --------->
+    <div id="cabecera">
+        <div id="texto">
+            <h1>Futurama</h1>
+            <span>Consulta los personajes</span>
+        </div>
+        <div id="imgCabecera">
+            <img id="img4" src="https://res.cloudinary.com/dzxqhkyqd/image/upload/v1554871230/planet-express.png"/>
+        </div>
+    </div>
+
+    <div id="contImg">
+        <!--------- Tarjeta --------->
+        <div class="card" style="width: 18rem;">
+            <img id="img1"
+                src="https://image.goat.com/750/attachments/product_template_pictures/images/060/172/882/original/CZ4149_400.png.png"
+                class="card-img-top" alt="img1">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <a href="#" class="btn btn-primary" onclick="cambiarImagen()">Actualizar</a>
+            </div>
         </div>
     </div>
 </body>
