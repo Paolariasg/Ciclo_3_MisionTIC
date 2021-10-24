@@ -46,7 +46,6 @@ const filtro = (num) => {
 }
 
 
-
 //Únicamente funciona sobre nodejs
 module.exports = {
     saludar,
